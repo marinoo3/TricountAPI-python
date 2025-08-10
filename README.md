@@ -91,8 +91,8 @@ Create a new instance.
 
 ## Credits
 
-This Python implementation is inspired by and builds upon the work of [mlaily](https://github.com/mlaily), whose original F# implementation can be found [here](https://github.com/mlaily/TricountApi).  
-
+This Python implementation is inspired by and builds upon the work of [mlaily](https://github.com/mlaily), whose original F# implementation can be found [here](https://github.com/mlaily/TricountApi).
+This project is a further development of the Python port by [marinoo3](https://github.com/marinoo3/TricountAPI-python), with additional features, improvements, and adjustments tailored to extended reporting and monthly/category breakdowns.
 
 ## Disclaimer
 

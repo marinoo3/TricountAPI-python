@@ -1,14 +1,18 @@
 import requests
 import uuid
+import os
+
 from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives import serialization
+from dotenv import load_dotenv
 
 import warnings
 
 
 class TricountAPI():
-
-    def __init__(self, tricount_key: str, app_id="d1fe52d6-8a1b-46d5-b569-7c05a409b73c") -> None:
+    load_dotenv()
+    APP_ID = os.getenv("APP_ID")
+    def __init__(self, tricount_key: str, app_id=APP_ID) -> None:
 
         self.base_url = "https://api.tricount.bunq.com"
         self.app_installation_id = self.__generate_installation_id(app_id)
